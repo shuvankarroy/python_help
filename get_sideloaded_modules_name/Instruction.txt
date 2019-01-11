@@ -1,0 +1,2 @@
+The Script provides names of all sideloaded modules present in the local system
+Note : It does not provide any preinstalled modules name come loaded by default with python

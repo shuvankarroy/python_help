@@ -1,0 +1,31 @@
+Methods to create python exe from a .py file :
+------------------------------------------------------------------------------------
+
++++++++++++++++++++++++++++OPTION 1 +++++++++++++++++++++++++++++++
+1) Install the module pyinstaller using "pip install pyinstaller"
+2) Paste The Script to "C:\Program Files\Python36\Scripts" location
+3) Open cmd in ADMIN mode
+4) go to "C:\Program Files\Python36\Scripts" directory 
+5) write the followin command 
+	Python pyinstaller-script.py --onefile YOUR_SCRIPT_NAME.py
+6) after completion you will fin exe in "C:\Program Files\Python36\Scripts\dist" location
+
+remember : PYTHON neeeds to be added to PATH or ENVIRONMENT VARIABLE
+
+
++++++++++++++++++++++++++++OPTION 2+++++++++++++++++++++++++++++++
+Python EXE Maker... a front-end GUI for PyInstaller.
+
+A GUI application that will convert your .py file into an EXE. This works on Windows with Python 3.
+
+To install:
+pip install pysimplegui-exemaker
+
+To execute:
+python -m pysimplegui-exemaker.pysimplegui-exemaker
+
+When you run it you'll see the GUI screen. Simply browse to your .py file, choose an optional .ico file and click "Make EXE". It will create the EXE file and leave it in the folder where your .py file was. The program deletes the temporary files and folder used to create the EXE.
+
+It was built using PyInstaller and PySimpleGUI. Not all .py files can be turned into EXEs using PyInstaller.
+
+The installer will install everything you need including PyInstaller and PySimpleGUI.
