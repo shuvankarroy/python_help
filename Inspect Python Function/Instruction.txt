@@ -1,0 +1,21 @@
+The method inspect.signature(function_name) only works in interactive mode
+
+STEP 1: import inspect (if not available installation can be done through cmd line)
+
+STEP 2: The function needed to be predefined before calling inspect.signature(function_name)
+
+STEP 3: call inspect.signature(function_name)
+
+OUTPUT: output of inspect.signature(function_name) is as follows:
+	<Signature (argument_1 = default_value, argument_2 = default_value, argument_3 = default_value, .... ,argument_n = default_value)>
+
+Example:
+-------------------------------------------------------------------
+>>> import inspect
+>>> def fun(a=0, b=1, c=2):
+	    print(a,b,c)
+	    return (a+b+c)
+
+>>> inspect.signature(fun)
+<Signature (a=0, b=1, c=2)>
+>>> 
